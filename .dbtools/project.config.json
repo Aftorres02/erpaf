@@ -4,7 +4,7 @@
     "connectionName" : "",
     "version" : "25.2.0.0"
   },
-  "schemas" : [ "DEV_01" ],
+  "schemas" : [ "DEV_1" ],
   "lastReleaseVersion" : "",
   "export" : {
     "format" : {
