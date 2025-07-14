@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+<include file="_custom/dept-data.sql" relativeToChangelogFile="true"/>
+<include file="_custom/emp-data.sql" relativeToChangelogFile="true"/>
+</databaseChangeLog>
+
+<!--BEGIN-->
+<include file="dev_1/table/dept.sql" relativeToChangelogFile="true"/>
+<include file="dev_1/table/emp.sql" relativeToChangelogFile="true"/>
+<include file="dev_1/ref_constraint/fk_deptno.sql" relativeToChangelogFile="true"/>
+<include file="dev_1/index/idx_emp_deptno.sql" relativeToChangelogFile="true"/>
+<!--END-->
+<!--BEGIN CUSTOM-->
+<include file="_custom/dept-data.sql" relativeToChangelogFile="true"/>
+<include file="_custom/emp-data.sql" relativeToChangelogFile="true"/>
+<!--END CUSTOM-->
